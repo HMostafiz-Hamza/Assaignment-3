@@ -14,8 +14,7 @@
               colors: {
                 clifford: '#da373d',
                 'parrot': '#ABEF5F',
-                'gray-1': '#494949',
-                'gray-2': '#737373',
+                'parrot-2': 'rgba(171, 239, 95, 0.50)',
               }
             }
           }
@@ -102,13 +101,56 @@
               </div>
         </nav>
         <!-- Navbar End -->
-        <div class="banner">
-
+        <div class="banner flex flex-col items-center w-4/5 m-auto">
+          <div class="flex flex-col items-center gap-5">
+            <img src="assets/banner.png" alt="">
+          <h1 class="text-[#212121] text-6xl text-center">A barn house of this design has a <br> striking appearance</h1>
+          <p class="text-center text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+          </div>
+          <div class="mt-5 mb-12">
+            <a class="btn rounded-full bg-parrot-2">View Details<div class="rounded-full bg-parrot px-2 py-1">
+              <i class=" fa-solid fa-arrow-right -rotate-45 text-xl "></i></div></a>
+          </div>
         </div>
     </header>
     <!-- Main Start -->
-    <main>
-
+    <main class=" bg-[#F4F4F4]">
+      <!-- About Us Section -->
+      <section class="about-us w-4/5 m-auto pt-5 flex gap-4">
+        <div class="w-1/2">
+            <a class="btn rounded-full bg-[#ffffff] px-2 py-0 text-[#494949]"><i class=" fa-solid fa-arrow-right text-[#494949]"></i>About Us</a>
+            <h2 class="text-[#212121] text-4xl font-bold my-4">We design thoughtful, liveable spaces</h2>
+            <p class="text-[#494949] text-base font-medium">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents</p>
+            
+            <!-- Cards -->
+            <div class="card card-side bg-base-100 shadow-xl px-4 my-4 rounded-2xl">
+              <figure>
+                <img
+                  src="assets/commercial.png"
+                  alt=""  />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-[#494949] font-bold text-lg">Commercial</h2>
+                <p class="font-medium text-[#737373] text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl px-4 rounded-2xl">
+              <figure>
+                <img
+                  src="assets/residential.png"
+                  alt=""  />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-[#494949] font-bold text-lg">Residential</h2>
+                <p class="font-medium text-[#737373] text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+        </div>
+        <div class="w-1/2">
+          <img src="assets/Rectangle.png" class="h-full rounded-2xl" alt="">
+        </div>
+      </section>
     </main>
     <!-- Footer Start -->
     <footer>
