@@ -6,8 +6,113 @@
     <title>Rinterio</title> 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0801ac5f6a.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'parrot': '#ABEF5F',
+                'gray-1': '#494949',
+                'gray-2': '#737373',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <!-- Header Start -->
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <!-- <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li> -->
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Contact US</a></li>
+                    </ul>
+                  </div>
+                  <div class="rounded-full bg-parrot px-3 py-2 mr-2">
+                    <i class=" fa-solid fa-arrow-right -rotate-45 text-xl "></i>
+                  </div>
+                  <a class="btn btn-ghost text-3xl p-0">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#494949] font-bold">Home</a></li>
+                    <!-- <li>
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li> -->
+                    <li><a class=" text-[#737373]">Services</a></li>
+                    <li><a class=" text-[#737373]">Portfolio</a></li>
+                    <li><a class=" text-[#737373]">Blogs</a></li>
+                    <li><a class=" text-[#737373]">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-x-2">
+                <!-- Search Button SVG -->
+                  <a class="btn rounded-full bg-white border-none"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M17.5062 17.5098L22.0047 22.0113" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.0084 11.0104C20.01 6.03982 15.982 2.00904 11.0114 2.00739C6.04079 2.00573 2.01001 6.03383 2.00836 11.0044C2.00671 15.975 6.03481 20.0057 11.0054 20.0074C15.976 20.009 20.0067 15.981 20.0084 11.0104Z" stroke="#737373" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg></a>
+
+                <!-- Shopping Cart Svg -->
+                  <a class="btn rounded-full bg-white border-none"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M8.00673 16.028L15.2699 16.0304C19.7575 16.0319 20.441 13.2129 21.27 9.1015C21.5092 7.91561 21.6288 7.32267 21.3419 6.92751C21.0549 6.53235 20.5046 6.53216 19.404 6.5318L6.00989 6.52734" stroke="#737373" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.0067 16.0282L5.38958 3.54225C5.16729 2.65184 4.36753 2.02698 3.4498 2.02668L2.51135 2.02637" stroke="#737373" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.88671 16.0283L8.47528 16.0282C7.11193 16.0277 6.00633 17.1786 6.00586 18.5987C6.00578 18.8354 6.18992 19.0274 6.41715 19.0275L17.5057 19.0312" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5047 22.0288C11.3331 22.0291 12.0049 21.3577 12.0052 20.5293C12.0055 19.7009 11.3341 19.0291 10.5057 19.0288C9.67725 19.0285 9.00545 19.6999 9.00518 20.5283C9.0049 21.3567 9.67625 22.0285 10.5047 22.0288Z" stroke="#737373" stroke-width="1.5"/>
+                    <path d="M17.5047 22.0313C18.3331 22.0315 19.0049 21.3602 19.0052 20.5318C19.0055 19.7033 18.3341 19.0315 17.5057 19.0313C16.6772 19.031 16.0055 19.7023 16.0052 20.5308C16.0049 21.3592 16.6763 22.031 17.5047 22.0313Z" stroke="#737373" stroke-width="1.5"/>
+                  </svg></a>
+                  <a class="btn rounded-full bg-parrot">Book Consult <i class="fa-solid fa-arrow-right text-xl rounded-full -rotate-45 bg-black px-2 py-1 text-white"></i></a>
+                </div>
+              </div>
+        </nav>
+        <!-- Navbar End -->
+        <div class="banner">
+
+        </div>
+    </header>
+    <!-- Main Start -->
+    <main>
+
+    </main>
+    <!-- Footer Start -->
+    <footer>
+
+    </footer>
 </body>
 </html>
